@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # Basic errors, flakes, and import sorting
+ignore = ["E203", "E501"]  # Ignore whitespace before ':', Line length (Black handles this)
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

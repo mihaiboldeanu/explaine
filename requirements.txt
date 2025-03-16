@@ -1,0 +1,5 @@
+gemini-python
+sydney-py
+scikit-learn
+shap
+ruff
